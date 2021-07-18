@@ -2,7 +2,9 @@ package com.javastart.springcontext;
 
 public class CombatCat {
     private String name;
-    private Integer strength = 1;
+
+    @CalculateCatStrength(minStrength = 10, maxStrength = 14)
+    private Integer strength;
 
     public String getName() {
         return name;
