@@ -16,4 +16,6 @@
         <property name="baxterCat" ref="baxterCat"/>
     </bean>
 
+    <bean class="com.javastart.springcontext.CalculateCatStrengthBeanPostProcessor"/>
+
 </beans>
