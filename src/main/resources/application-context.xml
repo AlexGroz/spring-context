@@ -11,4 +11,9 @@
         <property name="name" value="Baxter"/>
     </bean>
 
+    <bean class="com.javastart.springcontext.FightClubImpl" id="fightClub">
+        <property name="loriCat" ref="loriCat"/>
+        <property name="baxterCat" ref="baxterCat"/>
+    </bean>
+
 </beans>
