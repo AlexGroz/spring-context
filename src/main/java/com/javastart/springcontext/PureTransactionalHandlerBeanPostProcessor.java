@@ -31,7 +31,7 @@ public class PureTransactionalHandlerBeanPostProcessor implements BeanPostProces
                 public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
                     System.out.println("Opening the transaction");
                     long before = System.nanoTime();
-                    Object result = method.invoke(args);
+                    Object result = method.invoke(bean, args);
                     long after = System.nanoTime();
                     System.out.println((after - before) / 1000);
                     System.out.println("Closing the transaction");
