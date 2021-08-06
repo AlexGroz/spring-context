@@ -1,5 +1,7 @@
 package com.javastart.springcontext;
 
+
+@PureTransactional
 public class FightClubImpl implements FightClub{
 
     private CombatCat loriCat;
